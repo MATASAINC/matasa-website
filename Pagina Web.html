@@ -1,0 +1,3795 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATASA - Fabricación de Mangueras de PVC</title>
+    <meta name="description" content="MATASA - Empresa líder en fabricación de mangueras de PVC de alta calidad. Productos para riego, uso doméstico e industrial.">
+    <meta name="keywords" content="mangueras PVC, riego, industrial, MATASA, fabricación">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <style>
+/* Ocultar scroll principal de la página */
+html {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+}
+
+html::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+}
+
+body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+}
+
+/* General Body Styles */
+html, body, main, section.hero, .carousel-container {
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    box-sizing: border-box !important;
+}
+.carousel-slide,
+.carousel-slide.active,
+.carousel-slide img,
+.carousel-overlay {
+    overflow: visible !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #1a4a1a !important;
+    background-image: url('images/Fondo.jpg') !important;
+    background-size: auto !important;
+    background-position: center center !important;
+    background-attachment: scroll !important;
+    background-repeat: repeat !important;
+    line-height: 1.6;
+    position: relative;
+    z-index: 0;
+    box-sizing: border-box;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1); /* Overlay sutil para mejorar legibilidad */
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Barra superior */
+.top-bar {
+    background: #1a4a1a;
+    color: white;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.top-bar-left {
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-info i {
+    font-size: 1rem;
+}
+
+.top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.social-media-top {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-media-top a {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.social-media-top img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: white;
+    padding: 2px;
+}
+
+.social-media-top a:hover {
+    transform: scale(1.1);
+}
+
+/* Header and Navigation */
+header {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    position: relative;
+}
+
+header::before {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Asegura que la navegación esté por encima del overlay */
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2f672c;
+    text-decoration: none;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    display: inline-block;
+}
+
+nav .logo img {
+    height: 70px;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    display: block;
+    background-color: transparent !important;
+    background-image: none !important;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+nav .logo img:hover {
+    transform: scale(1.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    position: relative;
+    transform: translateY(0);
+    box-shadow: none !important;
+    background: transparent !important;
+    backdrop-filter: none !important;
+    border: none !important;
+}
+
+nav a:hover, nav a.active {
+    color: #2f672c !important;
+    background: #fff !important;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+nav a:active {
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para la nota de marca registrada en la navegación */
+nav .trademark-note {
+    color: #fff;
+    font-size: 0.75rem;
+    font-style: italic;
+    opacity: 0.8;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    white-space: nowrap;
+}
+
+nav .trademark-note:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Content */
+main {
+    min-height: calc(100vh - 180px - 120px); /* Ajusta estos valores según la altura real del header y footer */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: transparent !important;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 32px !important;
+    margin-bottom: 2.5rem !important;
+    background: none !important;
+    color: white;
+    text-align: center !important;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    height: 70vh;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    padding-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Carrusel */
+.carousel-container {
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    background: transparent !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    position: relative !important;
+    overflow: hidden !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+    border: none !important;
+}
+
+.carousel-slide {
+    display: none !important;
+    opacity: 0 !important;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+    pointer-events: none !important;
+}
+
+.carousel-slide.active {
+    display: flex !important;
+    opacity: 1 !important;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: transparent !important;
+    pointer-events: auto !important;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    object-position: center center !important;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.carousel-slide:nth-child(2) img,
+.carousel-slide:nth-child(3) img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-overlay {
+    pointer-events: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    padding: 2rem;
+    background: none;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+/* Eliminar reglas específicas para la primera imagen */
+.carousel-slide:first-child,
+.carousel-slide:first-child img {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    /* No forzar width/height aquí, ya se aplica arriba */
+}
+
+/* Eliminar controles e indicadores visuales */
+.carousel-btn,
+.carousel-indicators {
+    display: none !important;
+}
+
+/* Eliminar líneas azules de debugging */
+.carousel-slide,
+.carousel-slide img {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Overlay oscuro para que el texto sobresalga */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent !important;
+    background-color: transparent !important;
+    opacity: 1 !important;
+    filter: none !important;
+    transition: background-color 0.5s ease;
+    z-index: 1;
+}
+
+/* Contenido del hero */
+.hero-content {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté por encima del overlay */
+}
+
+/* Animación hover - ilumina la imagen */
+.hero:hover::before {
+    background: transparent !important;
+}
+
+.hero:hover {
+    transform: scale(1.02); /* Ligero zoom para efecto adicional */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Sombra para legibilidad */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8); /* Sombra para legibilidad */
+}
+
+.btn {
+    background-color: #2f672c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5fa239;
+}
+
+/* About Us Section */
+.about-us-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 2.5rem auto 2.5rem auto;
+    padding: 2.5rem 2vw;
+    font-size: 1.18rem;
+    margin-top: 0.2rem !important;
+    margin-bottom: 2.5rem !important;
+}
+
+.about-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #2f672c;
+    font-weight: bold;
+}
+
+.about-desc {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.35rem !important;
+}
+
+.about-cards, .valores-grid {
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.valores-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.valor-card {
+    flex: 1 1 320px;
+    max-width: 400px;
+    min-width: 280px;
+}
+
+.about-card {
+    min-height: 120px;
+    height: 160px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-card-title {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #2f672c;
+    font-weight: bold;
+}
+
+.about-card ul {
+    list-style: disc inside;
+    margin-left: 1.2rem;
+    padding-left: 0;
+    font-size: 1.05rem;
+}
+
+.about-card li {
+    margin-bottom: 0.5em;
+}
+
+.about-cards > .about-card:last-child {
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+    width: 60%;
+    min-width: 260px;
+    max-width: 600px;
+    height: auto;
+}
+
+.about-cards > .about-card.slide-down-card:nth-child(2) {
+    margin-left: -10px;
+}
+
+/* Products Section */
+.products-container {
+    max-width: 1100px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 1rem;
+}
+
+.products-container h2 {
+    font-size: 2.7rem;
+    font-weight: bold;
+    color: #2f672c;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/* Elimina cualquier regla de .card-back-content y restaura el grid de las cards */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem 2rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+}
+.product-card {
+    perspective: 1200px;
+    min-width: 380px;
+    max-width: 600px;
+    width: 100%;
+    height: 520px;
+    min-height: 520px;
+    max-height: 520px;
+    margin-bottom: 0;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    background: transparent;
+    justify-self: center;
+    position: relative;
+    overflow: hidden !important; /* Cambio: ocultar overflow en la card principal */
+    display: flex;
+    flex-direction: column;
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s !important;
+    transform-style: preserve-3d;
+}
+.product-card:hover .card-inner,
+.product-card:focus-within .card-inner {
+    transform: rotateY(180deg);
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+.card-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.card-back {
+    z-index: 3;
+    transform: rotateY(180deg);
+    /* Elimina cualquier transición de opacity o animación de aparición */
+    transition: none !important;
+    opacity: 1 !important;
+    overflow-y: auto !important; /* Cambio: permitir scroll vertical */
+    max-height: 100% !important;
+    height: 100% !important;
+    /* Ocultar scroll visualmente pero mantener funcionalidad */
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+}
+.card-back::-webkit-scrollbar {
+    width: 6px;
+}
+.card-back::-webkit-scrollbar-track {
+    background: transparent;
+}
+.card-back::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+.card-back::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.card-front img {
+    width: 95%;
+    height: 95%;
+    max-width: 95%;
+    max-height: 95%;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    background: transparent !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.card-front {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.card-front h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #1a4a1a;
+}
+.card-back h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #1a4a1a;
+}
+.card-back p {
+    font-size: 0.95rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+.card-back ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+    text-align: left;
+}
+.card-back ul li {
+    margin-bottom: 0.3rem;
+}
+
+.card-front img {
+    max-width: 90%;
+    max-height: 140px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card-front h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.card-front p {
+    color: #666;
+    margin: 0 0 1rem 0;
+    font-size: 0.9rem;
+}
+
+.flip-hint {
+    background: rgba(47, 103, 44, 0.1);
+    color: #2f672c;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 2px solid #2f672c;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+/* Verde para Tramada Verde */
+.products-grid > .product-card:first-child .flip-hint {
+    background: rgba(47, 103, 44, 0.15) !important;
+    color: #2f672c !important;
+    border: 2px solid #2f672c !important;
+}
+/* Azul para SilicAqua */
+.products-grid > .product-card.silicaqua .flip-hint {
+    background: rgba(0, 32, 86, 0.15) !important;
+    color: #002056 !important;
+    border: 2px solid #002056 !important;
+}
+/* Azul claro para Nivel e Industrial */
+.products-grid > .product-card:nth-child(4) .flip-hint,
+.products-grid > .product-card:nth-child(5) .flip-hint {
+    background: rgba(124, 149, 187, 0.15) !important;
+    color: #7c95bb !important;
+    border: 2px solid #7c95bb !important;
+}
+/* Amarillo para Multiusos */
+.products-grid > .product-card:nth-child(6) .flip-hint {
+    background: rgba(212, 148, 39, 0.15) !important;
+    color: #d49427 !important;
+    border: 2px solid #d49427 !important;
+}
+
+.card-back h3 {
+    margin: 0 0 0.7rem 0;
+    font-size: 1.15em;
+    color: #2f672c;
+    word-break: break-word;
+    line-height: 1.2;
+}
+.card-back .description {
+    color: #333;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+    font-size: 0.98em;
+    word-break: break-word;
+    line-height: 1.4;
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.card-back .specs h4, .card-back .specs li strong {
+    color: #2f672c;
+}
+
+.card-back .specs {
+    background: #f8f9fa;
+    border-left: 3px solid #2f672c;
+    color: #333;
+    width: 95%;
+    margin: 0 auto 1.2rem auto;
+    padding: 1.2rem 1rem;
+    box-sizing: border-box;
+}
+
+.card-back .specs h4 {
+    margin: 0 0 0.8rem 0;
+    font-size: 1rem;
+}
+
+.card-back .specs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.card-back .specs li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.85rem;
+}
+
+.card-back .specs li:last-child {
+    border-bottom: none;
+}
+
+.card-back .specs li strong {
+    color: white;
+}
+
+/* Colores específicos para cada producto */
+.product-card.silicaqua .card-back {
+    background: linear-gradient(135deg, #002056 0%, #004a8b 100%);
+}
+
+.product-card:nth-child(4) .card-back,
+.product-card:nth-child(5) .card-back {
+    background: linear-gradient(135deg, #7c95bb 0%, #9bb3d9 100%);
+}
+
+.product-card:nth-child(6) .card-back {
+    background: linear-gradient(135deg, #d49427 0%, #f0b040 100%);
+}
+
+/* Especificaciones técnicas: sin fondo, solo borde institucional */
+.products-grid > .product-card.silicaqua .card-back .specs {
+    background: #fff !important;
+    border-left: 3px solid #002056 !important;
+}
+.products-grid > .product-card.silicaqua .card-back .specs h4 {
+    color: #222 !important;
+    font-weight: bold !important;
+}
+.products-grid > .product-card.silicaqua .card-back .tabla-especificaciones th {
+    color: #fff !important;
+}
+
+.products-grid > .product-card.silicaqua .card-back .specs ul {
+    list-style: disc inside !important;
+    margin-left: 1.2rem !important;
+    padding-left: 0 !important;
+}
+.products-grid > .product-card.silicaqua .card-back .specs ul.subspecs {
+    list-style: circle inside !important;
+    margin-left: 1.5rem !important;
+    font-size: 0.95em !important;
+    color: #333 !important;
+}
+.products-grid > .product-card.silicaqua .card-back .specs li {
+    margin-bottom: 0.3em !important;
+}
+
+.products-grid > .product-card:nth-child(4) .card-back .specs,
+.products-grid > .product-card:nth-child(5) .card-back .specs {
+    background: #f2f6fa !important;
+    border-left: 3px solid #7c95bb !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back .specs h4,
+.products-grid > .product-card:nth-child(5) .card-back .specs h4 {
+    color: #7c95bb !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back .tabla-especificaciones th,
+.products-grid > .product-card:nth-child(5) .card-back .tabla-especificaciones th {
+    background: #7c95bb !important;
+}
+
+.products-grid > .product-card:nth-child(6) .card-back .specs {
+    background: #fff !important;
+    border-left: 3px solid #d49427 !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back .specs h4 {
+    color: #222 !important;
+    font-weight: bold !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back .tabla-especificaciones th {
+    background: #d49427 !important;
+    color: #fff !important;
+}
+
+/* Popup Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+}
+
+.popup-overlay.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+}
+
+.popup-content {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    animation: slideIn 0.3s ease;
+}
+
+.popup-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-close:hover {
+    color: #2f672c;
+    background: #f0f0f0;
+}
+
+.popup-product-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.popup-product-title {
+    color: #2f672c;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.popup-product-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.popup-product-specs {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #5fa239;
+}
+
+.popup-product-specs h4 {
+    color: #2f672c;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.popup-product-specs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup-product-specs li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.popup-product-specs li:last-child {
+    border-bottom: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-50px) scale(0.9);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .about-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+        max-width: 500px;
+    }
+    .product-card {
+        min-width: 200px;
+        max-width: 100%;
+    }
+    .about-us-container {
+        padding: 1.2rem 0;
+    }
+    .about-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1.2rem;
+    }
+    .about-title {
+        font-size: 2rem;
+    }
+    .slide-down-card, .about-card {
+        height: 180px;
+        min-height: 140px;
+    }
+    .about-cards > .about-card:last-child {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+    }
+}
+
+@media (max-width: 600px) {
+    .card-back, .card-front {
+        font-size: 0.9em;
+        padding: 1rem 0.5rem;
+        min-height: 0;
+    }
+    .tabla-especificaciones table {
+        font-size: 0.8em;
+    }
+    .product-card {
+        height: 480px;
+    }
+}
+
+/* SilicAqua specific styles */
+.product-card.silicaqua h3 {
+    color: #004a8b;
+}
+
+.trademark-note {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Contact Section - Diseño Moderno */
+.contact-container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 2.5rem auto;
+    margin-top: 0.5rem; /* Aún más reducido */
+}
+
+/* Hero del contacto */
+.contact-hero {
+    text-align: center;
+    margin-bottom: 1.2rem; /* Más reducido */
+    padding: 0.6rem;    /* Más reducido */
+    /* background: linear-gradient(135deg, rgba(47, 103, 44, 0.1), rgba(95, 162, 57, 0.1)); */
+    /* border-radius: 20px; */
+    /* border: 1px solid rgba(47, 103, 44, 0.2); */
+}
+
+.contact-hero h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #2f672c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-hero h2 i {
+    font-size: 2.2rem;
+    color: #5fa239;
+}
+
+.contact-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 0;
+}
+
+/* Información de contacto */
+.contact-info {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(47, 103, 44, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.contact-info-header h3 {
+    font-size: 1.8rem;
+    color: #2f672c;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.contact-info-header h3 i {
+    color: #5fa239;
+}
+
+.contact-info-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Detalles de contacto */
+.contact-details {
+    margin-bottom: 2.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Cambiado de flex-start a center */
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(47, 103, 44, 0.05);
+    border-radius: 12px;
+    border-left: 4px solid #2f672c;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    background: rgba(47, 103, 44, 0.1);
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #2f672c, #5fa239);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(47, 103, 44, 0.3);
+}
+
+.contact-icon i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact-text h4 {
+    color: #2f672c;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 600;
+}
+
+.contact-text p {
+    color: #666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.contact-text a {
+    color: #2f672c;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-text a:hover {
+    color: #5fa239;
+    text-decoration: underline;
+}
+
+/* Mapa */
+.map-container {
+    margin-top: 2rem;
+}
+
+.map-container h4 {
+    color: #2f672c;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.map-container h4 i {
+    color: #5fa239;
+}
+
+.map-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(47, 103, 44, 0.1);
+    width: 100%;
+    max-width: 100%;
+}
+
+.map-wrapper iframe {
+    width: 100% !important;
+    min-width: 100% !important;
+    display: block;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(47, 103, 44, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.form-header h3 {
+    font-size: 1.8rem;
+    color: #2f672c;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.form-header h3 i {
+    color: #5fa239;
+}
+
+.form-header p {
+    color: #666;
+    font-size: 1rem;
+}
+
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2f672c;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-group label i {
+    color: #5fa239;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2f672c;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(47, 103, 44, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+/* Botón de envío */
+.btn-submit {
+    background: linear-gradient(135deg, #2f672c, #5fa239);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(47, 103, 44, 0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(47, 103, 44, 0.4);
+    background: linear-gradient(135deg, #5fa239, #2f672c);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+/* Redes sociales */
+.social-media-contact {
+    margin-top: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(47, 103, 44, 0.1);
+}
+
+.social-media-contact h4 {
+    color: #2f672c;
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-media-contact h4 i {
+    color: #5fa239;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+    min-width: 80px;
+}
+
+.social-icon i {
+    font-size: 1.8rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.social-icon.whatsapp:hover {
+    color: #25d366;
+    transform: translateY(-3px);
+}
+
+.social-icon.whatsapp:hover i {
+    background: #25d366;
+    color: white;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.social-icon.linkedin:hover {
+    color: #0077b5;
+    transform: translateY(-3px);
+}
+
+.social-icon.linkedin:hover i {
+    background: #0077b5;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 119, 181, 0.4);
+}
+
+.social-icon.facebook:hover {
+    color: #1877f3;
+    transform: translateY(-3px);
+}
+
+.social-icon.facebook:hover i {
+    background: #1877f3;
+    color: white;
+    box-shadow: 0 4px 15px rgba(24, 119, 243, 0.4);
+}
+
+/* Responsive Design para Contacto */
+@media (max-width: 1100px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-hero h2 {
+        font-size: 2.2rem;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        width: 95%;
+        margin-top: 5rem;
+    }
+    
+    .contact-hero {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-hero h2 {
+        font-size: 2rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+    
+    .contact-info,
+    .contact-form {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+    
+    .contact-icon {
+        align-self: center;
+    }
+    
+    .social-icons {
+        gap: 1rem;
+    }
+    
+    .social-icon {
+        min-width: 70px;
+        padding: 0.8rem;
+    }
+    
+    .social-icon i {
+        font-size: 1.5rem;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .social-icon span {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .contact-info-header h3,
+    .form-header h3 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-item {
+        padding: 0.8rem;
+    }
+    
+    .contact-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .contact-icon i {
+        font-size: 1rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-submit {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+/* Animaciones para el apartado de contacto */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact-hero {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.contact-info {
+    animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.contact-form {
+    animation: slideInRight 0.8s ease-out 0.4s both;
+}
+
+.contact-item {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.contact-item:nth-child(1) { animation-delay: 0.1s; }
+.contact-item:nth-child(2) { animation-delay: 0.2s; }
+.contact-item:nth-child(3) { animation-delay: 0.3s; }
+.contact-item:nth-child(4) { animation-delay: 0.4s; }
+
+/* Efecto de hover mejorado para los iconos de contacto */
+.contact-icon {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.contact-item:hover .contact-icon::before {
+    left: 100%;
+}
+
+/* Efecto de pulso para el botón de envío */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(47, 103, 44, 0.3);
+    }
+    50% {
+        box-shadow: 0 4px 25px rgba(47, 103, 44, 0.5);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(47, 103, 44, 0.3);
+    }
+}
+
+.btn-submit:hover {
+    animation: pulse 2s infinite;
+}
+
+/* Footer */
+footer {
+    background: url('images/Pasto.png') center center/cover no-repeat;
+    position: relative;
+    min-height: 120px;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.footer-copyright {
+    background: rgba(47, 103, 44, 0.7);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 0.7rem 1.5rem;
+    margin: 16px 0 16px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Botón Volver arriba */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #2f672c, #5fa239);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #5fa239, #2f672c);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content.popup-verde {
+    background: #2f672c;
+    color: #fff;
+}
+.popup-content.popup-azul {
+    background: #002056;
+    color: #fff;
+}
+.popup-content.popup-azulclaro {
+    background: #7c95bb;
+    color: #fff;
+}
+.popup-content.popup-amarillo {
+    background: #d49427;
+    color: #fff;
+}
+
+.popup-content.popup-verde .popup-product-specs,
+.popup-content.popup-azul .popup-product-specs,
+.popup-content.popup-azulclaro .popup-product-specs,
+.popup-content.popup-amarillo .popup-product-specs {
+    background: rgba(255,255,255,0.12);
+    border-left: 4px solid #fff;
+}
+
+.popup-content.popup-verde .popup-product-title,
+.popup-content.popup-azul .popup-product-title,
+.popup-content.popup-azulclaro .popup-product-title,
+.popup-content.popup-amarillo .popup-product-title {
+    color: #fff;
+}
+
+.popup-content.popup-verde .popup-close,
+.popup-content.popup-azul .popup-close,
+.popup-content.popup-azulclaro .popup-close,
+.popup-content.popup-amarillo .popup-close {
+    color: #fff;
+}
+
+.popup-content.popup-verde .popup-close:hover,
+.popup-content.popup-azul .popup-close:hover,
+.popup-content.popup-azulclaro .popup-close:hover,
+.popup-content.popup-amarillo .popup-close:hover {
+    color: #2f672c;
+    background: #fff;
+}
+
+.popup-content.popup-azul .popup-close:hover {
+    color: #002056;
+}
+.popup-content.popup-azulclaro .popup-close:hover {
+    color: #7c95bb;
+}
+.popup-content.popup-amarillo .popup-close:hover {
+    color: #d49427;
+}
+
+.popup-content.popup-verde .popup-product-specs h4,
+.popup-content.popup-azul .popup-product-specs h4,
+.popup-content.popup-azulclaro .popup-product-specs h4,
+.popup-content.popup-amarillo .popup-product-specs h4 {
+    color: #fff;
+}
+
+.popup-content.popup-verde .popup-product-specs li strong,
+.popup-content.popup-azul .popup-product-specs li strong,
+.popup-content.popup-azulclaro .popup-product-specs li strong,
+.popup-content.popup-amarillo .popup-product-specs li strong {
+    color: #fff;
+}
+
+.tabla-especificaciones {
+    overflow: unset !important;
+    max-height: unset !important;
+    height: unset !important;
+}
+.tabla-especificaciones table {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: unset !important;
+    display: table;
+}
+.tabla-especificaciones th, .tabla-especificaciones td {
+    text-align: center !important;
+}
+.tabla-especificaciones tr:nth-child(even) {
+    background: #f0f0f0;
+}
+
+.subspecs {
+    color: #333;
+    margin-left: 1.2rem;
+    font-size: 0.95em;
+}
+
+.card-back ul ul {
+    list-style-type: circle;
+    margin-left: 1.5em;
+    padding-left: 0.5em;
+}
+
+.card-back::-webkit-scrollbar {
+    width: 8px;
+    background: #eee;
+}
+.card-back::-webkit-scrollbar-thumb {
+    background: #2f672c;
+    border-radius: 4px;
+}
+
+/* --- UNIFICAR FORMATO DE TODAS LAS CARDS DE PRODUCTOS --- */
+.products-grid > .product-card .card-back {
+    background: #fff !important;
+    color: #222 !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    max-height: 100% !important;
+    min-height: 0 !important;
+    padding: 1.5rem 1.2rem 1.5rem 1.2rem !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    font-size: 0.97em !important;
+    padding-right: 0.5rem !important;
+    /* Asegurar que el scroll funcione correctamente en toda la card */
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+    /* Forzar que el scroll sea de toda la card */
+    position: relative;
+}
+.products-grid > .product-card .card-back h3,
+.products-grid > .product-card .card-back .specs h4,
+.products-grid > .product-card .card-back .specs li strong {
+    color: inherit !important;
+}
+.products-grid > .product-card .card-back .description {
+    color: #333 !important;
+}
+.products-grid > .product-card .card-back .specs {
+    background: #f8f9fa !important;
+    border-left: 3px solid currentColor !important;
+    color: #333 !important;
+    width: 95% !important;
+    margin: 0 auto 1.2rem auto !important;
+    padding: 1.2rem 1rem !important;
+    box-sizing: border-box !important;
+}
+.products-grid > .product-card .card-back .specs ul,
+.products-grid > .product-card .card-back .specs li {
+    color: #333 !important;
+}
+.products-grid > .product-card .card-back .subspecs {
+    color: #333 !important;
+    margin-left: 1.2rem !important;
+    font-size: 0.95em !important;
+}
+.products-grid > .product-card .card-back .tabla-especificaciones {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow: visible !important; /* Cambio: permitir que el scroll sea de toda la card */
+    margin: 1rem 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+}
+.products-grid > .product-card .card-back .tabla-especificaciones table {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    border-collapse: collapse !important;
+    background: #fff !important;
+    color: #222 !important;
+    font-size: 0.95rem !important;
+    margin: 0 auto !important;
+    table-layout: auto !important;
+}
+.products-grid > .product-card .card-back .tabla-especificaciones th, 
+.products-grid > .product-card .card-back .tabla-especificaciones td {
+    padding: 0.45em 0.5em !important;
+    text-align: center !important;
+    border: none !important;
+    white-space: normal !important;
+}
+.products-grid > .product-card .card-back .tabla-especificaciones th {
+    font-weight: bold !important;
+}
+/* Colores de fondo para los encabezados de tabla según el producto */
+.products-grid > .product-card:nth-child(1) .card-back .tabla-especificaciones th {
+    background: #2f672c !important;
+    color: #fff !important;
+}
+.products-grid > .product-card:nth-child(2) .card-back .tabla-especificaciones th,
+.products-grid > .product-card:nth-child(3) .card-back .tabla-especificaciones th {
+    background: #004a8b !important;
+    color: #fff !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back .tabla-especificaciones th,
+.products-grid > .product-card:nth-child(5) .card-back .tabla-especificaciones th {
+    background: #7c95bb !important;
+    color: #fff !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back .tabla-especificaciones th {
+    background: #d49427 !important;
+    color: #fff !important;
+}
+.products-grid > .product-card .card-back .tabla-especificaciones tr:nth-child(even) {
+    background: #f0f0f0 !important;
+}
+.products-grid > .product-card .card-back .specs h4 {
+    color: #222 !important;
+}
+.products-grid > .product-card .card-back .specs ul {
+    list-style: disc inside !important;
+    margin-left: 1.2rem !important;
+    padding-left: 0 !important;
+}
+.products-grid > .product-card .card-back .specs ul.subspecs {
+    list-style: circle inside !important;
+    margin-left: 1.5rem !important;
+    font-size: 0.95em !important;
+    color: #333 !important;
+}
+.products-grid > .product-card .card-back .specs li {
+    margin-bottom: 0.3em !important;
+}
+.products-grid > .product-card .card-back .specs li strong {
+    color: #222 !important;
+    font-weight: normal !important;
+}
+/* Colores personalizados para cada producto */
+.products-grid > .product-card:nth-child(1) .card-back {
+    border-left: 6px solid #2f672c !important;
+}
+.products-grid > .product-card:nth-child(2) .card-back,
+.products-grid > .product-card:nth-child(3) .card-back {
+    border-left: 6px solid #004a8b !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back,
+.products-grid > .product-card:nth-child(5) .card-back {
+    border-left: 6px solid #7c95bb !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back {
+    border-left: 6px solid #d49427 !important;
+}
+.products-grid > .product-card:nth-child(1) .card-back h3 {
+    color: #2f672c !important;
+}
+.products-grid > .product-card:nth-child(2) .card-back h3,
+.products-grid > .product-card:nth-child(3) .card-back h3 {
+    color: #004a8b !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back h3,
+.products-grid > .product-card:nth-child(5) .card-back h3 {
+    color: #7c95bb !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back h3 {
+    color: #d49427 !important;
+}
+
+.products-grid > .product-card.silicaqua .card-back::-webkit-scrollbar-thumb {
+    background: #002056 !important;
+    border-radius: 4px;
+}
+.products-grid > .product-card.silicaqua .card-back::-webkit-scrollbar {
+    background: #eaf1fa !important;
+}
+
+.products-grid > .product-card.silicaqua .card-back .tabla-especificaciones th {
+    background: #002056 !important;
+    color: #fff !important;
+}
+
+.products-grid > .product-card:nth-child(4) .card-back h3 {
+    color: #7c95bb !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back .specs h4 {
+    color: #222 !important;
+    font-weight: bold !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back .specs {
+    background: #fff !important;
+    border-left: 3px solid #7c95bb !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back .tabla-especificaciones th {
+    background: #7c95bb !important;
+    color: #fff !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back::-webkit-scrollbar-thumb {
+    background: #7c95bb !important;
+    border-radius: 4px;
+}
+.products-grid > .product-card:nth-child(4) .card-back::-webkit-scrollbar {
+    background: #eaf1fa !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back .specs ul {
+    list-style: disc inside !important;
+    margin-left: 1.2rem !important;
+    padding-left: 0 !important;
+}
+.products-grid > .product-card:nth-child(4) .card-back .specs li {
+    margin-bottom: 0.3em !important;
+}
+
+.products-grid > .product-card:nth-child(5) .card-back h3 {
+    color: #7c95bb !important;
+}
+.products-grid > .product-card:nth-child(5) .card-back .specs h4 {
+    color: #222 !important;
+    font-weight: bold !important;
+}
+.products-grid > .product-card:nth-child(5) .card-back .specs {
+    background: #fff !important;
+    border-left: 3px solid #7c95bb !important;
+}
+.products-grid > .product-card:nth-child(5) .card-back .tabla-especificaciones th {
+    background: #7c95bb !important;
+    color: #fff !important;
+}
+
+.products-grid > .product-card:nth-child(6) .card-back h3 {
+    color: #d49427 !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back .specs h4 {
+    color: #222 !important;
+    font-weight: bold !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back .specs {
+    background: #fff !important;
+    border-left: 3px solid #d49427 !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back .tabla-especificaciones th {
+    background: #d49427 !important;
+    color: #fff !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back .specs ul {
+    list-style: disc inside !important;
+    margin-left: 1.2rem !important;
+    padding-left: 0 !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back .specs li {
+    margin-bottom: 0.3em !important;
+}
+.products-grid > .product-card:nth-child(6) .card-back::-webkit-scrollbar-thumb {
+    background: #d49427 !important;
+    border-radius: 4px;
+}
+.products-grid > .product-card:nth-child(6) .card-back::-webkit-scrollbar {
+    background: #fdf6e7 !important;
+}
+
+.products-grid > .product-card:nth-child(5) .card-back .specs ul {
+    list-style: disc inside !important;
+    margin-left: 1.2rem !important;
+    padding-left: 0 !important;
+    display: block !important;
+}
+.products-grid > .product-card:nth-child(5) .card-back .specs li {
+    display: list-item !important;
+    list-style-type: disc !important;
+    list-style-position: inside !important;
+    color: #222 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.about-popup-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    backdrop-filter: blur(3px);
+}
+.about-popup-overlay.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+}
+.about-popup-content {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    max-width: 500px;
+    width: 90vw;
+    box-shadow: 0 12px 40px rgba(47,103,44,0.18);
+    position: relative;
+    animation: slideIn 0.3s ease;
+    border: 2px solid #5fa239;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-popup-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #5fa239;
+    transition: color 0.3s;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-popup-close:hover {
+    color: #2f672c;
+    background: #f0f0f0;
+}
+@media (max-width: 600px) {
+    .about-popup-content {
+        padding: 1.2rem 0.5rem;
+        max-width: 95vw;
+    }
+}
+
+.slide-card {
+    perspective: 800px;
+    overflow: visible;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+.slide-card-inner {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    transition: height 0.4s cubic-bezier(.4,2,.6,1);
+}
+.slide-card-front, .slide-card-back {
+    position: absolute;
+    left: 0; right: 0;
+    width: 100%;
+    background: #f4fcf6;
+    border: 2px solid #5fa239;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(47,103,44,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(.4,2,.6,1);
+    z-index: 1;
+    min-height: 180px;
+    height: 180px;
+    padding: 1.5rem 1.2rem;
+}
+.slide-card-front {
+    z-index: 2;
+    background: #f4fcf6;
+}
+.slide-card-back {
+    z-index: 1;
+    background: #f4fcf6;
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+.slide-card:hover .slide-card-front {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+}
+.slide-card:hover .slide-card-back {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+@media (max-width: 900px) {
+    .slide-card-inner, .slide-card-front, .slide-card-back {
+        height: 170px;
+        min-height: 170px;
+        padding: 1.1rem 0.7rem;
+    }
+}
+
+.slide-down-card {
+    width: 550px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: #e8f5e9;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(47,103,44,0.08);
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+.slide-down-card-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2f672c;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4fcf6;
+    z-index: 2;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    transition: opacity 0.15s;
+}
+.slide-down-card-desc {
+    background: #f4fcf6;
+    color: #222;
+    font-size: 1.08rem;
+    padding: 1.2rem 1.2rem 1.5rem 1.2rem;
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    opacity: 0;
+    transition: opacity 0.15s;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.slide-down-card:hover .slide-down-card-title {
+    opacity: 0;
+}
+.slide-down-card:hover .slide-down-card-desc {
+    opacity: 1;
+}
+.about-card {
+    min-height: 120px;
+    height: 160px;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.about-card-title {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    color: #2f672c;
+    font-weight: bold;
+}
+.about-card ul {
+    list-style: disc inside;
+    margin-left: 1.2rem;
+    padding-left: 0;
+    font-size: 1.05rem;
+}
+.about-card li {
+    margin-bottom: 0.5em;
+}
+.about-cards > .about-card:last-child {
+    grid-column: 1 / span 2;
+    margin: 0 auto;
+    width: 60%;
+    min-width: 260px;
+    max-width: 600px;
+    height: auto;
+}
+@media (max-width: 900px) {
+    .about-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1.2rem;
+    }
+    .slide-down-card, .about-card {
+        height: 180px;
+        min-height: 140px;
+    }
+    .about-cards > .about-card:last-child {
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+    }
+}
+
+.valores-title, .valores-grid {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.valores-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.valor-card {
+    flex: 1 1 320px;
+    max-width: 400px;
+    min-width: 280px;
+}
+.valor-titulo {
+    color: #2f672c;
+    font-size: 1.35rem;
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 8px rgba(47,103,44,0.07);
+}
+.valor-desc {
+    color: #18422a;
+    font-size: 1.09rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+@media (max-width: 900px) {
+    .about-us-container {
+        padding: 1.2rem 0;
+    }
+    .valores-title, .valores-grid {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+    .valores-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+@media (max-width: 1250px) {
+    .valores-title, .valores-grid {
+        max-width: 98vw;
+    }
+}
+@media (max-width: 1100px) {
+    .valor-card {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+.valores-title {
+    text-align: center;
+    color: #2f672c;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.social-media .social-icon img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(47,103,44,0.10);
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+.social-media .social-icon:hover img {
+    transform: scale(1.12) rotate(-6deg);
+    box-shadow: 0 4px 16px rgba(47,103,44,0.18);
+}
+.social-media .whatsapp img { border: 2px solid #25d366; }
+.social-media .linkedin img { border: 2px solid #0077b5; }
+.social-media .facebook img { border: 2px solid #1877f3; }
+
+.products-grid > .product-card:nth-child(5) .card-back::-webkit-scrollbar-thumb {
+    background: #7c95bb !important;
+    border-radius: 4px;
+}
+.products-grid > .product-card:nth-child(5) .card-back::-webkit-scrollbar {
+    background: #eaf1fa !important;
+}
+
+/* Header especial para la página de inicio (hero sobre video) */
+.header-hero {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-hero nav {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-hero .logo img {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.header-hero nav ul {
+    display: none;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: inline-block;
+    background: rgba(47,103,44,0.85);
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    margin-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+    z-index: 20;
+    transition: background 0.2s;
+}
+.menu-toggle:hover {
+    background: #2f672c;
+}
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    margin: 5px 0;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+/* Overlay del menú lateral */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(30, 30, 30, 0.45);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+    transition: opacity 0.3s;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    opacity: 0;
+    pointer-events: none;
+}
+.menu-overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu-overlay ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.2rem;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.menu-overlay ul li {
+    margin: 0;
+    width: 320px;
+    max-width: 90vw;
+    opacity: 0;
+    transform: translateX(100vw);
+    animation: none;
+    list-style: none;
+}
+.menu-overlay.open ul li {
+    animation: slideInCard 0.6s cubic-bezier(0.77,0,0.18,1) forwards;
+}
+.menu-overlay.open ul li:nth-child(1) { animation-delay: 0.12s; }
+.menu-overlay.open ul li:nth-child(2) { animation-delay: 0.24s; }
+.menu-overlay.open ul li:nth-child(3) { animation-delay: 0.36s; }
+@keyframes slideInCard {
+    from {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.menu-overlay ul li a {
+    display: block;
+    background: rgba(255,255,255,0.97);
+    color: #2f672c;
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 18px;
+    box-shadow: 0 6px 32px rgba(47,103,44,0.13), 0 1.5px 6px rgba(0,0,0,0.10);
+    padding: 1.1rem 2.2rem;
+    width: 100%;
+    text-align: center;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+.menu-overlay ul li a:hover {
+    background: #2f672c;
+    color: #fff;
+    transform: scale(1.04);
+}
+.menu-overlay .close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    cursor: pointer;
+    z-index: 101;
+}
+
+@media (max-width: 700px) {
+    .header-hero nav {
+        flex-direction: column;
+        padding: 0.5rem 0.5rem;
+    }
+    .header-hero nav ul {
+        gap: 1rem;
+    }
+    .header-hero .logo img {
+        height: 48px;
+    }
+    
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+}
+
+/* Header top (logo izquierda, info centrada, menú derecha) */
+.header-top {
+    width: 100vw;
+    max-width: 100vw;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    background: transparent !important;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    height: 140px !important;
+    min-height: 140px !important;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.header-top .logo {
+    justify-self: start;
+}
+
+.header-contact-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.header-contact {
+    color: #2f672c !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important;
+}
+
+.header-contact img {
+    width: 26px !important;
+    height: 26px !important;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.header-contact a {
+    color: #2f672c !important;
+    font-weight: bold !important;
+    font-size: 1.25rem !important;
+}
+
+.header-social {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.header-social img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 2px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(47,103,44,0.10);
+}
+
+.header-social a:hover img {
+    transform: scale(1.13) rotate(-6deg);
+    box-shadow: 0 4px 16px rgba(47,103,44,0.18);
+}
+
+.menu-toggle {
+    justify-self: end;
+    align-self: center;
+    margin: 0;
+}
+
+@media (max-width: 1100px) {
+    .header-top {
+        grid-template-columns: 1fr 3fr 1fr;
+        padding: 0.5rem 1rem;
+    }
+    .header-contact-social {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .header-top {
+        grid-template-columns: 1fr 2fr 1fr;
+        padding: 0.5rem 0.5rem;
+    }
+    .header-contact-social {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .header-social {
+        gap: 0.5rem;
+    }
+    .header-top .logo img {
+        max-height: 90px !important;
+    }
+    .header-contact {
+        font-size: 0.95rem;
+    }
+}
+
+.header-top {
+    min-height: 70px;
+    height: auto;
+    align-items: center;
+}
+
+.header-top .logo img {
+    max-height: 90px !important;
+    height: auto !important;
+    width: auto !important;
+    margin: 0 !important;
+    display: block !important;
+}
+
+@media (max-width: 1200px) {
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+} 
+
+/* Eliminar reglas que ocultan el scroll durante el giro */
+.product-card:hover .card-back,
+.product-card:focus-within .card-back {
+    overflow-y: hidden !important;
+} 
+
+.card-back.flipping {
+    overflow-y: hidden !important;
+} 
+
+.carousel-container,
+.carousel-container * {
+    overflow: visible !important;
+    overscroll-behavior: contain !important;
+    max-height: none !important;
+} 
+
+.products-grid .product-card .card-front img {
+    width: 180px;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem auto;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.products-grid .product-card .card-front h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.products-grid .product-card .card-front p {
+    color: #fff;
+    margin: 0 0 1rem 0;
+    font-size: 0.95rem;
+    text-align: center;
+}
+.products-grid .product-card .flip-hint {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+.products-grid .product-card .card-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+} 
+
+/* Colores personalizados para la cara frontal de cada card */
+.products-grid > .product-card:nth-child(1) .card-front {
+    background: #2f672c !important;
+    color: #fff !important;
+}
+.products-grid > .product-card:nth-child(2) .card-front,
+.products-grid > .product-card:nth-child(3) .card-front {
+    background: #004a8b !important;
+    color: #fff !important;
+}
+.products-grid > .product-card:nth-child(4) .card-front {
+    background: #b6c2da !important;
+    color: #fff !important;
+}
+.products-grid > .product-card:nth-child(5) .card-front {
+    background: #8fa0c2 !important;
+    color: #fff !important;
+}
+.products-grid > .product-card:nth-child(6) .card-front {
+    background: #d49427 !important;
+    color: #fff !important;
+}
+.products-grid > .product-card .card-front h3,
+.products-grid > .product-card .card-front p {
+    color: #fff !important;
+} 
+
+/* --- REGLAS SIMPLIFICADAS PARA EL SCROLL EN LAS CARDS --- */
+/* Eliminar todas las reglas conflictivas y mantener solo las básicas */
+.products-grid .product-card .card-back {
+    overflow-y: auto !important;
+    height: 100% !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    z-index: 3 !important;
+    transition: none !important;
+}
+
+/* Durante la animación de rotación, mantener el scroll oculto */
+.card-inner.flipping .card-back {
+    overflow-y: hidden !important;
+} 
+
+/* --- MODAL FICHA TÉCNICA --- */
+.modal-ficha {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.65);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+.modal-ficha-content {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 95vw;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  position: relative;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.modal-ficha-close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-size: 2.2rem;
+  color: #2f672c;
+  cursor: pointer;
+  font-weight: bold;
+  background: none;
+  border: none;
+  z-index: 10;
+  transition: color 0.2s;
+}
+.modal-ficha-close:hover {
+  color: #d49427;
+}
+#modal-ficha-body {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+@media (max-width: 600px) {
+  .modal-ficha-content {
+    max-width: 98vw;
+    padding: 1rem 0.5rem 1.5rem 0.5rem;
+  }
+} 
+
+/* --- REGLAS FINALES SIMPLIFICADAS PARA EL SCROLL --- */
+/* Permitir scroll en toda la card cuando está volteada */
+.card-back {
+  overflow-y: auto !important;
+  max-height: 100% !important;
+  height: 100% !important;
+}
+
+/* Ocultar scroll solo durante la animación de rotación */
+.card-inner.flipping .card-back {
+  overflow-y: hidden !important;
+}
+
+/* Asegurar que la tabla no tenga scroll propio y que toda la card tenga scroll */
+.tabla-especificaciones, .card-back .tabla-especificaciones {
+  overflow: visible !important;
+  max-height: none !important;
+  min-height: none !important;
+  height: auto !important;
+}
+
+/* Forzar que el scroll sea de toda la card, no solo de elementos internos */
+.products-grid > .product-card .card-back {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+/* Asegurar que todos los elementos internos no tengan scroll propio */
+.products-grid > .product-card .card-back * {
+  overflow: visible !important;
+}
+
+/* Estilos específicos para el scroll en las cards de productos */
+.products-grid .product-card .card-back::-webkit-scrollbar {
+  width: 8px;
+}
+
+.products-grid .product-card .card-back::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.products-grid .product-card .card-back::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.products-grid .product-card .card-back::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Ocultar scroll durante la animación */
+.products-grid .product-card .card-inner.flipping .card-back::-webkit-scrollbar {
+  display: none;
+}
+
+/* En el CSS, agrega o ajusta la clase .footer-grass: */
+.footer-grass {
+    display: block;
+    width: 100%;
+    height: 60px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilos adicionales de productos.html y contacto.html */
+        .main-center, .products-container, .products-container h2, .contact-container, .contact-wrapper, .contact-info, .contact-form {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: center !important;
+            display: block;
+        }
+        .about-us-container {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            text-align: center !important;
+            max-width: 1100px;
+            width: 100%;
+        }
+        .about-title, .about-desc, .valores-title {
+            text-align: center !important;
+            width: 100%;
+        }
+        .about-cards, .valores-grid {
+            justify-content: center !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .about-cards {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            align-items: stretch !important;
+            gap: 2rem !important;
+            max-width: 1000px !important;
+            width: 100% !important;
+            margin: 2.5rem auto 2.5rem auto !important;
+            box-sizing: border-box !important;
+        }
+        .about-card {
+            flex: 1 1 400px !important;
+            max-width: 450px !important;
+            min-width: 320px !important;
+            background: #f3faef !important;
+            border-radius: 18px !important;
+            padding: 2.2rem 1.5rem !important;
+            box-shadow: 0 2px 12px rgba(47,103,44,0.07) !important;
+            text-align: center !important;
+            font-size: 1.18rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+        }
+        .valores-grid {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            align-items: stretch !important;
+            gap: 2rem !important;
+            max-width: 1000px !important;
+            width: 100% !important;
+            margin: 2.5rem auto 2.5rem auto !important;
+            box-sizing: border-box !important;
+        }
+        .valor-card {
+            flex: 1 1 400px !important;
+            max-width: 450px !important;
+            min-width: 320px !important;
+            background: #f3faef !important;
+            border-radius: 18px !important;
+            padding: 2.2rem 1.5rem !important;
+            box-shadow: 0 2px 12px rgba(47,103,44,0.07) !important;
+            text-align: center !important;
+            font-size: 1.18rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+            transition: transform 0.25s cubic-bezier(.4,1.5,.5,1), box-shadow 0.25s cubic-bezier(.4,1.5,.5,1) !important;
+        }
+        .valor-card:hover {
+            transform: translateY(-12px) scale(1.03) !important;
+            box-shadow: 0 8px 24px rgba(47,103,44,0.18) !important;
+            z-index: 2 !important;
+        }
+        /* .about-video-container video {
+            opacity: 0;
+            transition: opacity 0.3s;
+        } */
+        .about-video-container video.video-visible {
+            opacity: 1;
+        }
+        @media (max-width: 900px) {
+          .about-cards, .valores-grid {
+            flex-direction: column !important;
+            align-items: center !important;
+          }
+          .about-card, .valor-card {
+            max-width: 95vw !important;
+          }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-hero">
+        <div class="header-top">
+            <a href="#inicio" class="logo">
+                <img src="images/logo.png" alt="Logo MATASA">
+            </a>
+            <div class="header-contact-social" style="display: flex; align-items: center; justify-content: flex-end; width: 100%; gap: 2rem; margin-left: 2rem;">
+                <span class="header-contact" style="display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="images/llamar.png" alt="Teléfono" style="width:26px;height:26px;vertical-align:middle;"> 
+                    <a href="tel:3319221038" style="font-size: 1.1rem; font-weight: 600; color: #2f672c; text-decoration: underline; white-space: nowrap;">33 1922 1038</a>
+                </span>
+                <span class="header-contact" style="display: flex; align-items: center; gap: 0.5rem;">
+                    <img src="images/email.png" alt="Correo" style="width:26px;height:26px;vertical-align:middle;"> 
+                    <a href="mailto:eislas.matasa@gmail.com" style="font-size: 1.1rem; font-weight: 600; color: #2f672c; text-decoration: underline;">eislas.matasa@gmail.com</a>
+                </span>
+                <span class="header-social" style="margin-left: 2rem; display: flex; align-items: center; gap: 1rem;">
+                    <a href="https://wa.me/3329565635" target="_blank" aria-label="WhatsApp"><img src="images/whatsapp-icon.png" alt="WhatsApp"></a>
+                    <a href="https://www.linkedin.com/company/matasa-mangueras-tapatias/posts/?feedView=all" target="_blank" aria-label="LinkedIn"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                    <a href="https://www.facebook.com/share/1Bw332y4ne/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                </span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="menu-overlay" id="menuOverlay">
+            <button class="close-btn" id="closeMenu" aria-label="Cerrar menú">&times;</button>
+            <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- INICIO -->
+        <section class="hero" id="inicio">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="images/Banner 1.png" alt="MATASA - Mangueras de PVC">
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/Banner 2.png" alt="MATASA - Productos Industriales">
+                    <div class="carousel-overlay">
+                        <div class="hero-content">
+                            <h1>Llevamos vida al mundo natural</h1>
+                            <p>Que la naturaleza siga creciendo contigo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="images/Banner 3.png" alt="MATASA - Innovación">
+                    <div class="carousel-overlay">
+                        <div class="hero-content">
+                            <h1>Riega calidad</h1>
+                            <p>Comprometidos con un futuro verde y saludable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOSOTROS -->
+        <section class="about-us-container" id="nosotros">
+            <h2 class="about-title">Sobre Nosotros</h2>
+            <p class="about-desc">MATASA es una empresa 100% mexicana que inició operaciones en 2007, especializada en la fabricación de mangueras de PVC, así como en la distribución y maquila de las mismas. Nuestro objetivo principal es ofrecer productos de CALIDAD.</p>
+            <div class="about-video-container">
+                <video src="images/Matasa productos.mp4" controls poster="images/logo.png" style="width:100%;max-width:700px;display:block;margin:24px auto 32px auto;border-radius:18px;box-shadow:0 2px 12px rgba(47,103,44,0.10);background:#fff;" preload="none" autoplay muted></video>
+            </div>
+            <div class="about-cards">
+                <div class="about-card slide-down-card">
+                    <div class="slide-down-card-title">Misión</div>
+                    <div class="slide-down-card-desc">
+                        Contribuir al bienestar de la naturaleza, siendo esta nuestra razón principal de existencia. Ponemos a disposición productos de alta calidad para llevar agua a nuestro mundo natural, gestionando nuestras operaciones de manera que generen valor tanto para la compañía como para la sociedad.
+                    </div>
+                </div>
+                <div class="about-card slide-down-card">
+                    <div class="slide-down-card-title">Visión</div>
+                    <div class="slide-down-card-desc">
+                        Ser una compañía reconocida por generar un impacto positivo en el ámbito ambiental y ecológico, gracias al apoyo de nuestros consumidores, colaboradores, clientes, proveedores y todos los grupos de interés relacionados con la compañía.
+                    </div>
+                </div>
+            </div>
+            <h3 class="valores-title">Valores</h3>
+            <div class="valores-grid">
+                <div class="valor-card">
+                    <div class="valor-titulo">CALIDAD</div>
+                    <div class="valor-desc">En nuestros productos.</div>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-titulo">HONESTIDAD</div>
+                    <div class="valor-desc">Al entregar el producto completo.</div>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-titulo">SERVICIO</div>
+                    <div class="valor-desc">Personalizado para cada uno de nuestros clientes.</div>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-titulo">CONFIANZA</div>
+                    <div class="valor-desc">Al generar relaciones profesionales pero amigables a largo plazo.</div>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-titulo">RESPETO</div>
+                    <div class="valor-desc">Ante todo, para fomentar relaciones sanas y colaborativas.</div>
+                </div>
+                <div class="valor-card">
+                    <div class="valor-titulo">AGRADECIMIENTO</div>
+                    <div class="valor-desc">Nuestro principal valor corporativo es reconocer y agradecer a proveedores, clientes y colaboradores.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTOS -->
+        <section class="products-container" id="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/manguera-tramada-verde.png" alt="Manguera Tramada Verde">
+                            <h3>Manguera Tramada Verde</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Manguera Tramada Verde</h3>
+                            <p>Ideal para el regado de jardines y uso doméstico en general, la manguera tramada verde es flexible y resistente, diseñada especialmente para soportar el uso frecuente en exteriores.</p>
+                            <span style="font-weight:bold;color:#111;display:block;margin-bottom:0.3em;">Especificaciones</span>
+                            <ul>
+                                <li>Manguera tricapa
+                                    <ul>
+                                        <li>Base negra compuesta de PVC de alta calidad</li>
+                                        <li>Tramado de poliéster de alta resistencia</li>
+                                        <li>Capa refuerzo compuesta de PVC virgen pigmentado verde</li>
+                                    </ul>
+                                </li>
+                                <li>Uso Residencial</li>
+                            </ul>
+                            <div class="tabla-especificaciones">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID MATASA</th>
+                                            <th>Longitud</th>
+                                            <th>Peso kg/metro (Mínimo)</th>
+                                            <th>Peso kg/metro (Máximo)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>MTV-1/2-100-MTS</td><td>100 m</td><td>0.1</td><td>0.105</td></tr>
+                                        <tr><td>MTV-5/8-100-MTS</td><td>100 m</td><td>0.17</td><td>0.18</td></tr>
+                                        <tr><td>MTV-3/4-100-MTS</td><td>100 m</td><td>0.24</td><td>0.25</td></tr>
+                                        <tr><td>MTV-1"-100-MTS</td><td>100 m</td><td>0.39</td><td>0.41</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/manguera-silicaqua.png" alt="Manguera SilicAqua*">
+                            <h3>Manguera SilicAqua*</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Manguera SilicAqua*</h3>
+                            <p>Esta manguera versátil puede utilizarse para diversas aplicaciones, incluyendo uso doméstico, jardinería, lavado de autos en casa y mantenimiento de patios. Su flexibilidad la hace ideal para tareas que requieren movimiento constante.</p>
+                            <span style="font-weight:bold;color:#111;display:block;margin-bottom:0.3em;">Especificaciones</span>
+                            <ul>
+                                <li>Manguera 1 capa: Elaborada con material virgen pigmentado</li>
+                                <li>Uso Residencial</li>
+                                <li>Anti-torsión</li>
+                            </ul>
+                            <div class="tabla-especificaciones">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID MATASA</th>
+                                            <th>Longitud</th>
+                                            <th>Peso kg/metro (Mínimo)</th>
+                                            <th>Peso kg/metro (Máximo)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>MTA-1/2-100-MTS</td><td>100 m</td><td>0.1</td><td>0.105</td></tr>
+                                        <tr><td>MTA-5/8-100-MTS</td><td>100 m</td><td>0.17</td><td>0.18</td></tr>
+                                        <tr><td>MTA-3/4-100-MTS</td><td>100 m</td><td>0.24</td><td>0.25</td></tr>
+                                        <tr><td>MTA-1"-100-MTS</td><td>100 m</td><td>0.39</td><td>0.41</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/manguera-silicaqua-tramada.png" alt="Manguera SilicAqua Tramada">
+                            <h3>Manguera SilicAqua Tramada</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Manguera SilicAqua Tramada</h3>
+                            <p>La versión reforzada de la manguera SilicAqua, pensada para trabajos más rudos, como en granjas, terrazas o áreas verdes de fraccionamientos y clubes. Con mayor resistencia y espesor, es adecuada para usos más exigentes.</p>
+                            <span style="font-weight:bold;color:#111;display:block;margin-bottom:0.3em;">Especificaciones</span>
+                            <ul>
+                                <li>Manguera tricapa
+                                    <ul>
+                                        <li>Base azul compuesta de PVC de alta calidad</li>
+                                        <li>Tramado de poliéster de alta resistencia</li>
+                                        <li>Capa refuerzo compuesta de PVC virgen pigmentado azul</li>
+                                    </ul>
+                                </li>
+                                <li>Uso Rudo</li>
+                                <li>Anti-torsión</li>
+                            </ul>
+                            <div class="tabla-especificaciones">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID MATASA</th>
+                                            <th>Longitud</th>
+                                            <th>Peso kg/metro (Mínimo)</th>
+                                            <th>Peso kg/metro (Máximo)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>MSILA-TR-1/2-100-MTS</td><td>100 m</td><td>0.135</td><td>0.145</td></tr>
+                                        <tr><td>MSILA-TR-5/8-100-MTS</td><td>100 m</td><td>0.158</td><td>0.181</td></tr>
+                                        <tr><td>MSILA-TR-3/4-100-MTS</td><td>100 m</td><td>0.218</td><td>0.231</td></tr>
+                                        <tr><td>MSILA-TR-1"-100-MTS</td><td>100 m</td><td>0.145</td><td>0.155</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/manguera-nivel.png" alt="Manguera Nivel">
+                            <h3>Manguera Nivel</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Manguera Nivel</h3>
+                            <p>Perfecta para nivelaciones precisas en áreas agrícolas o de jardinería, esta manguera permite medir y distribuir agua con exactitud. Ideal para aplicaciones que requieren un flujo controlado y constante.</p>
+                            <span style="font-weight:bold;color:#111;display:block;margin-bottom:0.3em;">Especificaciones</span>
+                            <ul>
+                                <li>Manguera 1 capa: Manguera elaborada con PVC virgen</li>
+                                <li>Uso ligero: Manguera para usos múltiples</li>
+                            </ul>
+                            <div class="tabla-especificaciones">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID MATASA</th>
+                                            <th>Longitud</th>
+                                            <th>Peso kg/metro (Mínimo)</th>
+                                            <th>Peso kg/metro (Máximo)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>MNV-1/4-100-MTS</td><td>100 m</td><td>0.02</td><td>0.025</td></tr>
+                                        <tr><td>MNV-5/16-100-MTS</td><td>100 m</td><td>0.03</td><td>0.035</td></tr>
+                                        <tr><td>MNV-3/8-100-MTS</td><td>100 m</td><td>0.045</td><td>0.05</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/manguera-industrial.png" alt="Manguera Industrial">
+                            <h3>Manguera Industrial</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Manguera Industrial</h3>
+                            <p>Manguera altamente resistente diseñada para tareas industriales, de alta presión o con uso intensivo. Ideal para entornos de trabajo exigentes, donde la durabilidad es clave.</p>
+                            <span style="font-weight:bold;color:#111;display:block;margin-bottom:0.3em;">Especificaciones</span>
+                            <ul>
+                                <li>Manguera 1 capa: Manguera elaborada con PVC virgen</li>
+                                <li>Uso rudo: Manguera para usos múltiples</li>
+                            </ul>
+                            <div class="tabla-especificaciones">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID MATASA</th>
+                                            <th>Longitud</th>
+                                            <th>Peso kg/metro (Mínimo)</th>
+                                            <th>Peso kg/metro (Máximo)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>MIN-1/4-100-MTS</td><td>100 m</td><td>0.03</td><td>0.035</td></tr>
+                                        <tr><td>MIN-5/16-100-MTS</td><td>100 m</td><td>0.04</td><td>0.045</td></tr>
+                                        <tr><td>MIN-3/8-100-MTS</td><td>100 m</td><td>0.055</td><td>0.06</td></tr>
+                                        <tr><td>MIN-1/2-100-MTS</td><td>100 m</td><td>0.085</td><td>0.09</td></tr>
+                                        <tr><td>MIN-3/4-100-MTS</td><td>100 m</td><td>0.017</td><td>0.018</td></tr>
+                                        <tr><td>MIN-1"-100-MTS</td><td>100 m</td><td>0.31</td><td>0.32</td></tr>
+                                        <tr><td>MIN-1 1/4-50-MTS</td><td>50 m</td><td>0.47</td><td>0.5</td></tr>
+                                        <tr><td>MIN-1 1/2-50-MTS</td><td>50 m</td><td>0.67</td><td>0.7</td></tr>
+                                        <tr><td>MIN-2"-25-MTS</td><td>25 m</td><td>1.08</td><td>1.15</td></tr>
+                                        <tr><td>MIN-2"-50-MTS</td><td>50 m</td><td>1.08</td><td>1.15</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="images/manguera-multiusos.png" alt="Manguera Multiusos">
+                            <h3>Manguera Multiusos</h3>
+                        </div>
+                        <div class="card-back">
+                            <h3>Manguera Multiusos</h3>
+                            <p>Esta manguera está diseñada para soportar grandes presiones, lo que la convierte en una opción confiable para tareas que requieren una alta resistencia y durabilidad.</p>
+                            <span style="font-weight:bold;color:#111;display:block;margin-bottom:0.3em;">Especificaciones</span>
+                            <ul>
+                                <li>Manguera tricapa
+                                    <ul>
+                                        <li>Base compuesta de PVC virgen pigmentado</li>
+                                        <li>Tramado de poliéster de alta resistencia</li>
+                                        <li>Capa refuerzo compuesta de PVC virgen pigmentado</li>
+                                    </ul>
+                                </li>
+                                <li>Uso Comercial: Manguera para usos múltiples</li>
+                            </ul>
+                            <div class="tabla-especificaciones">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>ID MATASA</th>
+                                            <th>Longitud</th>
+                                            <th>Peso kg/metro (Mínimo)</th>
+                                            <th>Peso kg/metro (Máximo)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>MTUA-3/8-100-MTS</td><td>100 m</td><td>0.011</td><td>0.012</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="trademark-note">*SilicAqua es una marca registrada de MATASA.</p>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact-container" id="contacto">
+            <div class="contact-hero">
+                <h2>Contáctanos</h2>
+                <p class="contact-subtitle">Estamos aquí para ayudarte. ¡Envíanos un mensaje y te responderemos pronto!</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-info-header">
+                        <h3><i class="fas fa-info-circle"></i> Información de Contacto</h3>
+                        <p>Conecta con nosotros a través de cualquiera de estos medios</p>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 style="text-align:left;">Dirección</h4>
+                                <p>Puebla 115, San Francisco Tesistán, 45200, Zapopan, Jal.</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 style="text-align:left;">Teléfono</h4>
+                                <p>33 1922 1038</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4 style="text-align:left;">Correo Electrónico</h4>
+                                <p>eislas.matasa@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <h4><i class="fas fa-map"></i> Nuestra Ubicación</h4>
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14919.26126213456!2d-103.484218!3d20.80005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428a67d02251147%3A0x11861d236cf916f4!2sMATASA!5e0!3m2!1ses!2smx!4v1628204689378!5m2!1ses!2smx" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-header">
+                        <h3><i class="fas fa-paper-plane"></i> Envíanos un mensaje</h3>
+                        <p>Completa el formulario y nos pondremos en contacto contigo</p>
+                    </div>
+                    <form action="https://formsubmit.co/eislas.matasa@gmail.com" method="POST" class="contact-form-container">
+                        <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Nombre completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico</label>
+                            <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Teléfono (opcional)</label>
+                            <input type="tel" id="phone" name="phone" placeholder="33 1234 5678">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-tag"></i> Asunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecciona un asunto</option>
+                                <option value="Consulta de productos">Consulta de productos</option>
+                                <option value="Cotización">Cotización</option>
+                                <option value="Información general">Información general</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Mensaje</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                    <div class="social-media-contact">
+                        <h4><i class="fas fa-share-alt"></i> Síguenos en redes sociales</h4>
+                        <div class="social-icons">
+                            <a href="https://wa.me/3329565635" target="_blank" title="WhatsApp" class="social-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://www.linkedin.com/company/matasa-mangueras-tapatias/posts/?feedView=all" target="_blank" title="LinkedIn" class="social-icon linkedin">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://www.facebook.com/share/1Bw332y4ne/?mibextid=wwXIfr" target="_blank" title="Facebook" class="social-icon facebook">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="backToTop" class="back-to-top" aria-label="Volver arriba">
+        ↑
+    </button>
+
+    <footer>
+        <p class="footer-copyright">&copy; 2024 MATASA. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    // 1. Active Navigation Link
+    const navLinks = document.querySelectorAll('nav a');
+    const currentLocation = window.location.pathname.split("/").pop();
+
+    navLinks.forEach(link => {
+        // If the link's href is the same as the current file, add 'active' class
+        if (link.getAttribute('href') === currentLocation || (currentLocation === '' && link.getAttribute('href') === 'index.html')) {
+            link.classList.add('active');
+        }
+    });
+
+    // 2. Scroll Animations on elements
+    const animatedElements = document.querySelectorAll('.product-card, .about-us-container, .contact-wrapper');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                observer.unobserve(entry.target); // Stop observing once animated
+            }
+        });
+    }, {
+        threshold: 0.1 // Trigger when 10% of the element is visible
+    });
+
+    animatedElements.forEach(element => {
+        // Initially hide elements
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(20px)';
+        element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        observer.observe(element);
+    });
+
+    // 3. Contact Form Submission
+    const contactForm = document.querySelector('.contact-form form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent actual submission
+
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Simple validation
+            if (name && email && message) {
+                // Show a "pop-up" confirmation
+                alert('¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.');
+                
+                // Clear the form
+                contactForm.reset();
+            } else {
+                alert('Por favor, completa todos los campos requeridos.');
+            }
+        });
+    }
+
+    var menuToggle = document.getElementById('menuToggle');
+    var menuOverlay = document.getElementById('menuOverlay');
+    var closeMenu = document.getElementById('closeMenu');
+
+    if (menuToggle && menuOverlay && closeMenu) {
+        menuToggle.addEventListener('click', function() {
+            menuOverlay.classList.add('open');
+        });
+        closeMenu.addEventListener('click', function() {
+            menuOverlay.classList.remove('open');
+        });
+        // Cerrar menú al hacer clic en un enlace
+        menuOverlay.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                menuOverlay.classList.remove('open');
+            });
+        });
+    }
+
+    // Botón Volver arriba
+    const backToTopButton = document.getElementById('backToTop');
+    
+    if (backToTopButton) {
+        // Mostrar/ocultar botón según scroll
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('visible');
+            } else {
+                backToTopButton.classList.remove('visible');
+            }
+        });
+        
+        // Scroll suave al hacer clic
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
+    // Carrusel solo autoplay
+    window.slides = document.querySelectorAll('.carousel-slide');
+    window.currentSlide = 0;
+    window.interval = null;
+
+    function showSlide(index) {
+        window.slides.forEach(slide => slide.classList.remove('active'));
+        window.slides[index].classList.add('active');
+        window.currentSlide = index;
+    }
+
+    function nextSlide() {
+        const next = (window.currentSlide + 1) % window.slides.length;
+        showSlide(next);
+    }
+
+    function startAutoPlay() {
+        window.interval = setInterval(nextSlide, 5000);
+    }
+
+    showSlide(0);
+    startAutoPlay();
+}); 
+
+// Datos de los productos
+const productos = {
+    'manguera-tramada-verde': {
+        nombre: 'Manguera Tramada Verde',
+        imagen: 'images/manguera-tramada-verde.png',
+        descripcion: 'Manguera de PVC de alta calidad con refuerzo tramado, ideal para aplicaciones de riego y uso doméstico. Fabricada con materiales resistentes que garantizan durabilidad y flexibilidad.',
+        especificaciones: {
+            'Medidas disponibles': '1/2", 5/8", 3/4" y 1"',
+            'Material': 'PVC de alta calidad',
+            'Refuerzo': 'Tramado resistente',
+            'Presión máxima': 'Hasta 8 bar',
+            'Temperatura': '-10°C a +60°C',
+            'Aplicaciones': 'Riego doméstico, jardinería, uso general'
+        }
+    },
+    'manguera-silicaqua': {
+        nombre: 'Manguera SilicAqua*',
+        imagen: 'images/manguera-silicaqua.png',
+        descripcion: 'Manguera especializada SilicAqua con tecnología avanzada para aplicaciones que requieren máxima pureza y resistencia química. Ideal para uso alimentario y farmacéutico.',
+        especificaciones: {
+            'Medidas disponibles': '1/2", 5/8", 3/4" y 1"',
+            'Material': 'Silicona de grado alimentario',
+            'Certificaciones': 'FDA, CE, ISO 9001',
+            'Presión máxima': 'Hasta 10 bar',
+            'Temperatura': '-40°C a +200°C',
+            'Aplicaciones': 'Industria alimentaria, farmacéutica, química'
+        }
+    },
+    'manguera-silicaqua-tramada': {
+        nombre: 'Manguera SilicAqua* Tramada',
+        imagen: 'images/manguera-silicaqua-tramada.png',
+        descripcion: 'Manguera SilicAqua con refuerzo tramado para aplicaciones de alta presión y resistencia mecánica. Combina la pureza de la silicona con la resistencia del refuerzo tramado.',
+        especificaciones: {
+            'Medidas disponibles': '1/2", 5/8", 3/4" y 1"',
+            'Material': 'Silicona de grado alimentario con refuerzo',
+            'Refuerzo': 'Tramado de alta resistencia',
+            'Presión máxima': 'Hasta 15 bar',
+            'Temperatura': '-40°C a +200°C',
+            'Aplicaciones': 'Alta presión, industria pesada, aplicaciones críticas'
+        }
+    },
+    'manguera-nivel': {
+        nombre: 'Manguera Nivel',
+        imagen: 'images/manguera-nivel.png',
+        descripcion: 'Manguera especializada para medición de niveles en tanques y depósitos. Transparente para permitir la visualización del contenido y mediciones precisas.',
+        especificaciones: {
+            'Medidas disponibles': '1/4", 5/16" y 3/8"',
+            'Material': 'PVC transparente',
+            'Transparencia': 'Alta visibilidad',
+            'Presión máxima': 'Hasta 3 bar',
+            'Temperatura': '-10°C a +50°C',
+            'Aplicaciones': 'Medición de niveles, indicadores, tanques'
+        }
+    },
+    'manguera-industrial': {
+        nombre: 'Manguera Industrial',
+        imagen: 'images/manguera-industrial.png',
+        descripcion: 'Manguera industrial de alta resistencia diseñada para aplicaciones industriales exigentes. Disponible en una amplia gama de medidas para cubrir todas las necesidades industriales.',
+        especificaciones: {
+            'Medidas disponibles': '1/4", 5/16", 3/8", 1/2", 5/8", 3/4", 1", 1 1/4", 1 1/2" y 2"',
+            'Material': 'PVC industrial reforzado',
+            'Refuerzo': 'Múltiples capas',
+            'Presión máxima': 'Hasta 20 bar',
+            'Temperatura': '-20°C a +80°C',
+            'Aplicaciones': 'Industria pesada, construcción, minería, petróleo'
+        }
+    },
+    'manguera-multiusos': {
+        nombre: 'Manguera Multiusos',
+        imagen: 'images/manguera-multiusos.png',
+        descripcion: 'Manguera versátil para múltiples aplicaciones domésticas y comerciales. Perfecta para tareas generales que requieren flexibilidad y durabilidad.',
+        especificaciones: {
+            'Medidas disponibles': '3/8"',
+            'Material': 'PVC flexible',
+            'Flexibilidad': 'Alta',
+            'Presión máxima': 'Hasta 5 bar',
+            'Temperatura': '-10°C a +60°C',
+            'Aplicaciones': 'Uso doméstico, jardinería, limpieza, aplicaciones generales'
+        }
+    }
+};
+
+// Función para abrir popup
+function openPopup(productId) {
+    const producto = productos[productId];
+    if (!producto) return;
+
+    const popupBody = document.getElementById('popup-body');
+    const popupOverlay = document.getElementById('popup-overlay');
+    const popupContent = document.querySelector('.popup-content');
+
+    // Limpiar clases de color anteriores
+    popupContent.classList.remove(
+        'popup-verde',
+        'popup-azul',
+        'popup-azulclaro',
+        'popup-amarillo'
+    );
+
+    // Asignar clase de color según el producto
+    let colorClass = '';
+    if (productId === 'manguera-tramada-verde') colorClass = 'popup-verde';
+    if (productId === 'manguera-silicaqua' || productId === 'manguera-silicaqua-tramada') colorClass = 'popup-azul';
+    if (productId === 'manguera-nivel' || productId === 'manguera-industrial') colorClass = 'popup-azulclaro';
+    if (productId === 'manguera-multiusos') colorClass = 'popup-amarillo';
+    if (colorClass) popupContent.classList.add(colorClass);
+
+    // Crear contenido del popup
+    popupBody.innerHTML = `
+        <img src="${producto.imagen}" alt="${producto.nombre}" class="popup-product-image">
+        <h2 class="popup-product-title">${producto.nombre}</h2>
+        <p class="popup-product-description">${producto.descripcion}</p>
+        <div class="popup-product-specs">
+            <h4>Especificaciones Técnicas</h4>
+            <ul>
+                ${Object.entries(producto.especificaciones).map(([key, value]) => 
+                    `<li><strong>${key}:</strong> ${value}</li>`
+                ).join('')}
+            </ul>
+        </div>
+    `;
+
+    // Mostrar popup
+    popupOverlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Prevenir scroll
+}
+
+// Función para cerrar popup
+function closePopup() {
+    const popupOverlay = document.getElementById('popup-overlay');
+    popupOverlay.classList.remove('active');
+    document.body.style.overflow = ''; // Restaurar scroll
+}
+
+// Cerrar popup con ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closePopup();
+    }
+});
+
+// Cerrar popup al hacer clic fuera del contenido
+document.addEventListener('click', function(event) {
+    const popupOverlay = document.getElementById('popup-overlay');
+    const popupContent = document.querySelector('.popup-content');
+    
+    if (event.target === popupOverlay) {
+        closePopup();
+    }
+}); 
+    </script>
+</body>
+</html> 
