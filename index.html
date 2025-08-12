@@ -2545,7 +2545,7 @@ footer {
     }
 }
 
-/* Estilos específicos para móvil - Cards de Misión y Visión en fila horizontal */
+/* Estilos específicos para móvil - Cards de Misión y Visión rectangulares como valor-cards */
 @media (max-width: 768px) {
     .about-cards {
         display: flex !important;
@@ -2563,20 +2563,44 @@ footer {
         flex: 1 !important;
         max-width: calc(50% - 0.4rem) !important;
         min-width: 0 !important;
-        height: 120px !important;
+        height: auto !important;
         min-height: 120px !important;
         margin: 0 !important;
+        border-radius: 8px !important;
+        background: #f4fcf6 !important;
+        box-shadow: 0 2px 8px rgba(47,103,44,0.1) !important;
+        padding: 1rem !important;
+        position: relative !important;
+        overflow: visible !important;
     }
     
     .slide-down-card-title {
-        font-size: 1.4rem !important;
-        padding: 0.8rem !important;
+        font-size: 1.2rem !important;
+        padding: 0 !important;
+        margin-bottom: 0.5rem !important;
+        position: static !important;
+        opacity: 1 !important;
+        background: transparent !important;
+        color: #2f672c !important;
+        font-weight: bold !important;
+        text-align: left !important;
+        display: block !important;
+        height: auto !important;
+        line-height: 1.2 !important;
     }
     
     .slide-down-card-desc {
-        font-size: 0.8rem !important;
-        padding: 0.8rem !important;
-        line-height: 1.3 !important;
+        font-size: 0.9rem !important;
+        padding: 0 !important;
+        line-height: 1.4 !important;
+        position: static !important;
+        opacity: 1 !important;
+        background: transparent !important;
+        color: #18422a !important;
+        text-align: left !important;
+        display: block !important;
+        height: auto !important;
+        margin: 0 !important;
     }
 }
 
@@ -2587,18 +2611,20 @@ footer {
     
     .about-card.slide-down-card {
         max-width: calc(50% - 0.3rem) !important;
-        height: 100px !important;
+        height: auto !important;
         min-height: 100px !important;
+        padding: 0.8rem !important;
     }
     
     .slide-down-card-title {
-        font-size: 1.2rem !important;
-        padding: 0.6rem !important;
+        font-size: 1.1rem !important;
+        padding: 0 !important;
+        margin-bottom: 0.4rem !important;
     }
     
     .slide-down-card-desc {
-        font-size: 0.7rem !important;
-        padding: 0.6rem !important;
+        font-size: 0.8rem !important;
+        padding: 0 !important;
     }
 }
 
@@ -3903,7 +3929,7 @@ footer {
                             <h3><i class="fas fa-paper-plane"></i> Envíanos un mensaje</h3>
                             <p>Completa el formulario y nos pondremos en contacto contigo</p>
                         </div>
-                        <form action="https://formsubmit.co/eislas.matasa@gmail.com" method="POST" class="contact-form-container">
+                        <form action="https://formsubmit.co/5ed1e3d6e470a7e0d08dca83cf6ae9af" method="POST" class="contact-form-container">
                             <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
                             <div class="form-group">
                                 <label for="name"><i class="fas fa-user"></i> Nombre completo</label>
